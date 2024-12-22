@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cart_container{
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+article{
+    width: 75%;
+}
+.cart_box img{
+    width: 50px;
+    height: 50px;
+}
+.cart_img{
+    display: flex;
+    width: 400px;
+}
+.cart_img p {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.count_btns button{
+    background-color: white;
+    border: 1px solid #e9e6ed;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.count_btns button:nth-child(2):hover {
+    cursor: default;
+    background-color: white;
+}
+
+.count_btns button:hover{
+    background-color: #dcdcdc;
+}
+
+.cart_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid #e9e6ed;
+    padding-bottom: 5px;
+}
+.count_btns button{
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.edit_container{
+    display: flex;
+}
+
+.edit_container div:nth-child(2){
+    display: flex;
+    margin-left: 4rem;
+}
+
+.edit_container div:nth-child(2) span{
+    font-size: 12px;
+    background-color: #b3af54;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #dcdcdc;
+    min-width: 264px;
+    width: 24%;
+    height: 350px;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-top: 1.6rem;
+}
+.total span:nth-child(1){
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.total span:nth-child(2){
+    color: green;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+.checkout{
+    font-family: "Nunito", sans-serif;
+    padding: 9px 2px;
+    border: 1px solid #b3af54;
+    background-color: #b3af54;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.my_trash{
+    color: #a00;
+    font-size: 1.4rem;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 1263px) {
+    .cart_container{
+        flex-wrap: wrap;
+    }
+    article{
+        width: 100%;
+    }
+    .total{
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .cart_box{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    .edit_container{
+        margin-left: auto;
+    }
+}

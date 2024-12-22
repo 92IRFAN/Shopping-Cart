@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+section{
+    max-width: 1400px;
+    font-family: "Nunito", sans-serif;
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.cards{
+    width: 250px;
+    padding: 20px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.8rem;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
+.image_box img{
+    width: 150px;
+    height: 200px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.desc{
+    line-height: 1.8rem;
+}
+
+.details p:nth-child(1){
+    font-weight: bold;
+}
+.details p:nth-child(2){
+    color: grey;
+    font-size: 0.8rem;
+}
+.details p:nth-child(3){
+    font-weight: bold;
+    color: grey;
+}
+.details button{
+    font-family: "Nunito", sans-serif;
+    font-size: 0.9rem;
+    width: 132px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    background-color: #b3af54;
+    color: white;
+    outline: none;
+    border: 1px solid #b3af54;
+    border-radius: 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+.details button:hover{
+    background-color: white;
+    color: #b3af54;
+    cursor: pointer;
+}
